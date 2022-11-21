@@ -19,7 +19,7 @@ scoreboard players add $westGate GateAnimFrame 1
 execute unless score $westGate GateAnimFrame matches 4.. run schedule function ptk-blocks:openwestsidegate 0.15s
 
 # close gate after set time
-execute if score $westGate GateAnimFrame matches 4.. run schedule function ptk-blocks:closewestsidegate 2.5s
+execute if score $westGate GateAnimFrame matches 4.. run schedule function ptk-blocks:closewestsidegate 1.75s
 
 # reset current frame after anim is done
 execute if score $westGate GateAnimFrame matches 4.. run scoreboard players reset $westGate GateAnimFrame
